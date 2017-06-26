@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.haimgabay.letsplaychild.MainActivity">
+
+    <TextView
+        android:id="@+id/textViewHeadline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello And Welcome To The App!"
+        android:layout_alignParentLeft="true"
+        android:textColor="@color/orangeColor"
+        android:textSize="10pt"/>
+    <ImageButton
+        android:id="@+id/imageBtnShapes"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textViewHeadline"
+        android:layout_marginTop="75dp"
+        android:onClick="goToShapesActivity"
+        />
+    <ImageButton
+        android:id="@+id/imageBtnColors"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentRight="true"
+        android:background="@color/whiteBackground"
+        android:layout_alignTop="@id/imageBtnShapes"
+        android:onClick="goToColorsActivity" />
+    <ImageButton
+        android:id="@+id/imageBtnAnimals"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/imageBtnShapes"
+        android:layout_marginTop="25dp"
+        android:onClick="goToAnimalsActivity" />
+    <ImageButton
+        android:id="@+id/imageBtnNumbers"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentRight="true"
+       android:layout_alignTop="@id/imageBtnAnimals"
+        android:onClick="goToNumbersActivity"
+        />
+</RelativeLayout>
